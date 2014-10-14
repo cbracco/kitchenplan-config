@@ -12,7 +12,7 @@ recipes:
         - applications::php56
         - dotfiles::sshconfig
     mac_os_x:
-        # Modifies OSX default preferences
+        # Modify some OSX default preferences
         - osxdefaults::add_a_context_menu_item_for_showing_the_web_inspector_in_web_views
         - osxdefaults::add_note_to_loginscreen
         - osxdefaults::automatically_illuminate_built-in_macbook_keyboard_in_low_light
@@ -57,19 +57,16 @@ recipes:
         - osxdefaults::speed_up_mission_control_animations
         - osxdefaults::tap_to_click
         - osxdefaults::turn_off_keyboard_illumination_when_computer_is_not_used_for_5_minutes
-
-        # Installs a few applications
+        # Install a few applications
         - applications::sublime_text_3
         - applications::gnu-tar
         - applications::omnigraffle
-
-        # Modifies sudo settings
+        - applications::svgo
+        # Modify the default sudo settings
         - sudoalt::default
-
-        # Installs node.js
+        # Install node.js
         - nodejs::default
-
-        # Installs homebrew and homebrew cask, and installs all apps mentioned
+        # Install homebrew and homebrew cask, and install all apps mentioned
         # in the homebrewalt::apps and homebrewalt::cask_apps attributes
         - homebrewalt::default
 attributes:
@@ -87,9 +84,13 @@ attributes:
                 - syntastic: git://github.com/scrooloose/syntastic.git
                 - nerdtree: https://github.com/scrooloose/nerdtree.git
                 - vim-css-color: https://github.com/ap/vim-css-color
-    #ssh:
-        #host_aliases:
-            #- [alias,hostname,port]
+    ssh:
+        host_aliases:
+            - ["berg", "24.97.51.246", 6969]
+            - ["brs1", "54.225.128.165", 1212]
+            - ["brs2", "54.235.149.173", 22]
+            - ["brs321", "legacy.bigroomstudios.com", 1212]
+            - ["brs421", "el421.bigroomstudios.com", 1212]
     git:
         name: Chris Bracco
         email: chris@cbracco.me
@@ -107,13 +108,18 @@ attributes:
     homebrewalt:
         apps:
             - bash-completion
+            - coreutils
             - git
             - git-extras
             - git-flow
             - htop-osx
             - imagemagick
+            - libyaml
+            - nmap
+            - openssl
             - nginx
             - postgresql
+            - pv
             - pwgen
             - python
             - rsync
