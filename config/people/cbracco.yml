@@ -58,9 +58,10 @@ recipes:
         - osxdefaults::tap_to_click
         - osxdefaults::turn_off_keyboard_illumination_when_computer_is_not_used_for_5_minutes
         # Install a few applications
-        - applications::sublime_text_3
+        - applications::dnsmasq
         - applications::gnu-tar
         - applications::omnigraffle
+        - applications::sublime_text_3
         - applications::svgo
         # Modify the default sudo settings
         - sudoalt::default
@@ -142,6 +143,7 @@ attributes:
             - imagealpha
             - imageoptim
             - java
+            - licecap
             - moom
             - onepassword
             - opera-mobile-emulator
