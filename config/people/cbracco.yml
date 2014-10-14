@@ -115,6 +115,7 @@ attributes:
             - nginx
             - postgresql
             - pwgen
+            - python
             - rsync
             - siege
             - watch
