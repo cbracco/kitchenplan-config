@@ -124,7 +124,7 @@ attributes:
             - pv
             - pwgen
             - python
-            - rsync
+            #- rsync
             - siege
             - watch
             - wget
