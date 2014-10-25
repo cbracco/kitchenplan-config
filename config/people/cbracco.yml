@@ -57,7 +57,7 @@ recipes:
         - osxdefaults::speed_up_mission_control_animations
         - osxdefaults::tap_to_click
         - osxdefaults::turn_off_keyboard_illumination_when_computer_is_not_used_for_5_minutes
-        # Install a few applications
+        # Install some software
         - applications::dnsmasq
         - applications::gnu-tar
         - applications::omnigraffle
@@ -71,7 +71,7 @@ recipes:
         # in the homebrewalt::apps and homebrewalt::cask_apps attributes
         - homebrewalt::default
 attributes:
-    mysql_root_password: "password"
+    mysql_root_password: "root"
     dotfiles:
         vimusers:
             - root
