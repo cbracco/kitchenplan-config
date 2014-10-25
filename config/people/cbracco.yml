@@ -60,6 +60,7 @@ recipes:
         # Install some software
         - applications::dnsmasq
         - applications::gnu-tar
+        - applications::launchrocket
         - applications::omnigraffle
         - applications::sublime_text_3
         - applications::svgo
