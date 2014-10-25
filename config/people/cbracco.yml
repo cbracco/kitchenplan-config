@@ -101,7 +101,7 @@ attributes:
         loginmessage: If found please return this machine to Chris Bracco - (201) 953-3928 - chris@cbracco.me
         finder:
             preferred_view_style: clmv
-     authorization:
+    authorization:
         sudo:
             users:
                 - cbracco
