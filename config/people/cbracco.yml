@@ -157,6 +157,7 @@ attributes:
             - stay
             - sonos
             - sourcetree
+            - transmit
             - utorrent
             - virtualbox
             - vlc
