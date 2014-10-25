@@ -63,7 +63,6 @@ recipes:
         - applications::launchrocket
         - applications::omnigraffle
         - applications::sublime_text_3
-        #- applications::svgo
         # Modify the default sudo settings
         - sudoalt::default
         # Install node.js
@@ -124,7 +123,6 @@ attributes:
             - pv
             - pwgen
             - python
-            #- rsync
             - siege
             - watch
             - wget
@@ -166,12 +164,6 @@ attributes:
     nodejs:
         apps:
             - bower
-            - grunt
-            - grunt-cli
-            - gulp
-            - less
-            - uglify-js
-            - uglifycss
     gems:
         - sass
     php-apps:
