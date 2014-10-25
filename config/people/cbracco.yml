@@ -63,7 +63,7 @@ recipes:
         - applications::launchrocket
         - applications::omnigraffle
         - applications::sublime_text_3
-        - applications::svgo
+        #- applications::svgo
         # Modify the default sudo settings
         - sudoalt::default
         # Install node.js
