@@ -165,6 +165,9 @@ attributes:
     nodejs:
         apps:
             - bower
+            - grunt-cli
+            - gulp
+            - yo
     gems:
         - sass
     php-apps:
