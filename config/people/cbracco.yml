@@ -169,6 +169,8 @@ attributes:
             - gulp
             - yo
     gems:
+        - bundler
+        - jekyll
         - sass
     php-apps:
         - composer
