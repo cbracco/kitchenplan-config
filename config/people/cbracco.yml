@@ -160,6 +160,7 @@ attributes:
             - sourcetree
             - transmit
             - utorrent
+            - vagrant
             - virtualbox
             - vlc
     nodejs:
