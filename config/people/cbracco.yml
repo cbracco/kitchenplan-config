@@ -140,6 +140,7 @@ attributes:
             - firefox
             - google-chrome
             - google-hangouts
+            - harvest
             - imagealpha
             - imageoptim
             - istat-menus
